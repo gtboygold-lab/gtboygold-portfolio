@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GTBOYGOLD PROJECT</title>
+<link rel="stylesheet" href="indextwo.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2 class="logo">GTBOYGOLD</h2>
+  <ul>
+    <li><a href="#about" onclick="hideOthers('about')">About</a></li>
+    <li><a href="#interest" onclick="hideOthers('interest')">Interest</a></li>
+    <li><a href="#goals" onclick="hideOthers('goals')">Goals</a></li>
+    <li><a href="#contact" onclick="hideOthers('contact')">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <img src="images/20260116_123217.jpg" alt="Profile" class="profile-img">
+  <h1>GTBOYGOLD PROJECT</h1>
+  <p>Cyber Security Student | Tech Enthusiast | Future Security Expert</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>Introduction</h2>
+  <p>My name’s <b>Ayo Temitayo Gideon Bankole.</b> Right now, I’m working on my degree in the Faculty of Computing and Informatics, majoring in Cyber Security Science. This field puts me right at the front lines of digital defense—where technology’s always changing, and you have to keep up. My background’s rooted in math and the physical sciences, which really comes in handy when I’m tackling tough problems in IT.
+
+Outside the classroom, I wear a few other hats. I run <b>OLYCENE GLOBAL CONSULT LAUTECH CHAPTER,</b> and I’ve built my reputation as a Professional Phone Engineer and Gadget Consultant. I know my way around the ins and outs—both hardware and software—of today’s gadgets. I handle everything from fixing cracked screens and bringing dead phones back to life after water damage, to optimizing battery health and dealing with tricky repairs most people give up on. On the software side, I do system flashing, iOS upgrades, and all kinds of troubleshooting. I also help people and businesses figure out what tech they actually need and how to keep it running smoothly.</p>
+</section>
+
+<!-- INTEREST -->
+<section id="interest" class="section">
+  <h2>Why I Am Interested In Cyber Security</h2>
+  <p>I’ve spent years as a professional phone engineer and gadget consultant, getting my hands dirty with the physical side of tech. Now, I’m taking everything I know about hardware and diving into the world of cybersecurity. To me, you can't truly protect a device until you understand how it’s built from the ground up, and that’s the perspective I’m bringing to my studies.
+When I’m not digging into security protocols, I’m usually creating. Whether I’m designing in CorelDRAW or figuring out the perfect mobile recording chain for my 6-string bass, I’m obsessed with making tech work better and look sharper. I’m just starting this journey into cyber defense,</p>
+</section>
+
+<!-- GOALS -->
+<section id="goals" class="section">
+  <h2>Things I Want To Learn In This Course</h2>
+  <ul>
+    <li><b>Hardware-Level Security:</b> Using my background in phone engineering to teach people that true privacy starts with the physical device, not just the software.</li>
+    <li><b>Protecting Creativity:</b> Mastering digital security to keep creative assets—like my bass recordings and graphic designs—safe from theft or loss.</li>
+    <li><b>Simplifying Safety:</b> Learning to translate complex cyber threats (like phishing and scams) into simple advice that protects the everyday user.</li>
+    <li><b>Hands-on Testing:</b> Building my own "hardened" mobile lab to test secure software on the hardware I repair.</li>
+    <li><b>Community Defense:</b> Moving from just "fixing" gadgets to "defending" the people who use them, making the digital world safer for everyone.</li>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+
+ <p> Whether you’re looking to secure your hardware, need a hand with a technical project, or just want to talk about the intersection of tech and music, I’m always open to new conversations.</p>
+<p><b>Email:</b> Gtboygold@gmail.com</p>
+<p><b>WhatsApp/Call:</b> +234 8070825560</p>
+<p><b>Business:</b> Olycene Global Consult (Lautech Chapter)</p>
+<p><b>Instagram:</b> @gtboygold05</p>
+<p><b>TikTok:</b> @Gtboygold</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 GTBOYGOLD | Cyber Security Portfolio</p>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+
+function hideOthers(id){
+
+let sections = document.querySelectorAll(".section");
+
+sections.forEach:(function(section){
+section.style.display = "none";
+});
+
+document.getElementById(id).style.display = "block";
+
+}
+// show ABOUT first when page loads
+window.onload = function(){
+hideOthers('about');
+};
+</script>
+ 
+</body>
+</html>
